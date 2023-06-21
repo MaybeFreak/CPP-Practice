@@ -1,3 +1,5 @@
+// PASSED ALL TESTS
+
 #include <iostream>
 
 using namespace std;
@@ -14,7 +16,7 @@ double basicOp(char op, double val1, double val2) {
             return val1 * val2;
             break;
         case '/':
-            return val1 / val2;
+            return val2 != 0 ? val1 / val2 : 0;
             break;
         default:
             break;
